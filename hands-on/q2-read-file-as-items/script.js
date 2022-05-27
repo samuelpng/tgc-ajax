@@ -6,12 +6,15 @@ btn.addEventListener('click', async function(){
   for (i of fruitArray){
     fruitsList = document.querySelector('ul#fruits-list');
     console.log(i)
-    //fruitsList.innerHTML = `<li>${i}</li>`
+    
+    // fruitsList.innerHTML = fruitslist.innerHTML + `<li>${i}</li>`
     let liElement = document.createElement('li');
     liElement.innerHTML = i
     fruitsList.appendChild(liElement);
   }
 })
+
+document.querySelector('load-btn')
 
 
 
